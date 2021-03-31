@@ -2,11 +2,12 @@
 const path = require('path');
 const express = require('express');
 const app = express();
-app.use("/views", express.static('./views/'));
+
+app.use("/public", express.static('./public'));
 
 
 app.get('/', (req, res) => {
-  	res.sendFile(path.join(__dirname+'../views/chat.html'));
+  	res.sendFile(path.join(__dirname + '/views/chat.html'));
 });
 
 app.get('/data', (req, res) => {

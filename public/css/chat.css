@@ -3,60 +3,142 @@ html, body{
 	width: 100%;
 	height: 100%;
 }
+
 main, aside{
 	float: left;
 	height: 100%;
 	overflow: hidden;
 }
+
 main{
 	width: 75%;
 }
+
+#leftSide{
+	visibility: hidden;
+}
+
 aside{
 	width: 25%;
 	overflow-y: auto;
 }
 
+*{
+	font-family: 'Roboto', sans-serif;
+}
 
-img{
+.members-title{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background: #ccc;
+    font-weight: bold;
 }
+
+button#send_btn{
+	background: #4b6dcc;
+    color: #fff;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 45px;
+    line-height: 17px;
+    box-sizing: border-box;
+    margin-left: 15px;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+button#send_img{
+	background: #ccc;
+    color: #333;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 45px;
+    line-height: 17px;
+    box-sizing: border-box;
+    margin-left: 15px;
+    cursor: pointer;
+    min-width: 60px;
+}
+
 #name{
-	position: fixed;
-	background-color: #F2F1F1;	
-	width: inherit;
-	padding-top: 15px;
-	padding-bottom: 15px;
+    position: fixed;
+    background-color: #4b6dcc;
+    width: inherit;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    height: 80px;
+    box-sizing: border-box;
+    line-height: 50px;
+    color: #fff;
 }
+
+div.member{
+	width: 100%;
+    height: 35px;
+    line-height: 16px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 18px;
+    transition-duration: .25s;
+}
+
+div.member:hover{
+	background: #fff;
+}
+
 #name img{
 	display: inline;
 	width: 50px;
 	height: 50px;
 	float: left;
 }
+
 #name h1{
 	display: inline;
 }
+
 #conv{
-	background-color: #CAEEEE;
+	background-color: #fff;
 	position: relative;
 	top: 80px;
 	overflow-y: auto;
 	height: calc(100% - 110px);
 }
+
 #conv ul{
 	margin: 0;
 	list-style-type:none;
 }
+
 #send{
 	position: fixed;
 	bottom: 0px;
 	width: inherit;
+    background: #eee;
+    padding: 10px;
+    box-sizing: border-box;
 }
-#send input{
-	box-sizing: border-box;
-	width: 100%;
-	height: 30px;
+
+#send #send_msg{
+	width: 68%;
+	background: #fff;
+    color: #333;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 45px;
+    line-height: 17px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 aside{
-	background-color: #6EF7AE;
+	background-color: #e5e5e5;
 }

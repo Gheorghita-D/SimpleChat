@@ -2,200 +2,26 @@
 <html>
 <head>
 	<title>SimpleChat</title>
-	<link rel="stylesheet" type="text/css" href="./views/chat.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/chat.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<main>
-		<div id="name">
-			<img src="./views/a.png">
-			<h1>Alex</h1>
-		</div>
-		<div id="conv">
-			<ul>
-				<li>msg11111111111111</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg2</li>
-				<li>msg1</li>
-				<li>msg22222222222222222222222</li>
-			</ul>
-		</div>
+	<main id="leftSide">
+		<div id="name"></div>
+		<div id="conv"></div>
 		<div id="send">
-			<input type="text" name="message">
+			<input type="text" id="send_msg">
+			<button id="send_btn">Send</button>
+			<button id="send_img"><i class="fa fa-picture-o" aria-hidden="true"></i></button>
 		</div>
 	</main>
 	<aside>
-		<ul>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-			<li>Mihai</li>
-			<li>Alex</li>
-		</ul>
+		<div class="members-title">Members</div>
+		<div id="members"></div>
 	</aside>
-	<script type="text/javascript" src="./views/chat.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="/public/js/chat.js"></script>
 </body>
 </html>
