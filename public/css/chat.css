@@ -49,6 +49,39 @@ button#send_btn{
     margin-left: 15px;
     cursor: pointer;
     min-width: 100px;
+    transition-duration: .25s;
+}
+
+button#send_btn:hover{
+    opacity: .7;
+}
+
+div.message-sent{
+    width: auto;
+    max-width: 80%;
+    clear: both;
+    background: #7b7bed;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 10px;
+    float: right;
+    display: block;
+    margin-top: 3.5px;
+    margin-right: 5px;
+}
+
+div.message-received{
+    width: auto;
+    max-width: 80%;
+    clear: both;
+    background: #989899;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 10px;
+    float: left;
+    display: block;
+    margin-top: 3.5px;
+    margin-left: 5px;
 }
 
 button#send_img{
@@ -67,7 +100,7 @@ button#send_img{
 
 #name{
     position: fixed;
-    background-color: #4b6dcc;
+    background-color:#384278;
     width: inherit;
     text-align: center;
     font-size: 18px;
@@ -107,9 +140,10 @@ div.member:hover{
 #conv{
 	background-color: #fff;
 	position: relative;
-	top: 80px;
+	top: 40px;
 	overflow-y: auto;
-	height: calc(100% - 110px);
+	height: calc(100% - 125px);
+    padding-bottom: 10px;
 }
 
 #conv ul{
@@ -181,6 +215,18 @@ div#imageResults{
     overflow-y: scroll;
 }
 
+div.message img{
+    width: auto;
+}
+
+div.message-img{
+    height: 250px;
+}
+
+div.message-img img{
+    height: 250px;
+}
+
 img.search-results-img{
     height: auto;
     width: calc(50% - 10px);
@@ -188,11 +234,17 @@ img.search-results-img{
     border-radius: 5px;
     float: left;
     margin: 5px;
+    cursor: pointer;
+    transition-duration: .25s;
+}
+
+img.search-results-img:hover{
+    opacity: .7;
 }
 
 button.logout-btn{
     width: 200px;
-    background: #a56767;
+    background: #fc7a7a;
     border: 0px;
     color: #fff;
     margin: 0px;
@@ -220,10 +272,10 @@ div#members{
 
 div.nav-header{
     width: 100%;
-    background: #666;
+    background:#4b6dcc;
     display: block;
     height: 6%;
-    min-height: 50px;
+    min-height: 42px;
     box-sizing: border-box;
 }
 

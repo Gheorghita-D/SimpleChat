@@ -64,11 +64,11 @@ app.route('/signup')
 
 			request(options, (error, response) => {
 				let err = JSON.parse(response.body).error || '';
-				let resp =  JSON.parse(response.body).result;
+				let resp =  JSON.parse(response.body);
 				if(err.trim().length > 0){
 					res.redirect('/signup?error_code=2');
 				}else{
-					req.session.user = {id : resp.id, username : usernameValue};
+					req.session.user = {id : resp.result[0].id, username : usernameValue};
 					res.redirect('/chat');
 				}
 			});
@@ -94,11 +94,11 @@ app.route('/login')
 
 		request(options, (error, response) => {
 			let err = JSON.parse(response.body).error || '';
-			let resp =  JSON.parse(response.body).result[0];
-			if(err.trim().length > 0){
+			let resp =  JSON.parse(response.body);
+			if(err.trim() != ''){
 				res.redirect('/login?error_code=1');
 			}else{
-				req.session.user = {id : resp.id, username : usernameValue};
+				req.session.user = {id : resp.result[0].id, username : usernameValue};
 				res.redirect('/chat');
 			}
 		});
