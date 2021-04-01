@@ -1,22 +1,28 @@
 
 const visionEndpoint = "https://us-central1-simplechat-308917.cloudfunctions.net/images";
-
-var members = {members : [{id:"1", name:'John Doe'},{id:"2", name:'Michael Daniel'}, {id:"3", name:'Roger Tod'}]};
+const usersApiEndpoint = "https://europe-west1-simplechat-308917.cloudfunctions.net/users";
 
 async function getAllMembers(){
-	return members;
+
+	return new Promise(function (resolve, reject) {
+		$.get(usersApiEndpoint).done(resolve).fail(reject);
+	  });
 }
 
 async function setMembers(){
 
 	let allMembers = await getAllMembers().then((res) => {
-		return res;
+		return res.results;
 	});
 
 	let htmlCode = ``;
 
-	for(member of allMembers.members){
-		htmlCode += `<div class="member" onclick="setConversation(${member.id},'${member.name}')">${member.name}</div>`;
+	let currentUserId = $('#currentId').val();
+
+	for(member of allMembers){
+		if(currentUserId != member.id){
+			htmlCode += `<div class="member" onclick="setConversation(${member.id},'${member.username}')">${member.username}</div>`;
+		}
 	}
 
 	$('#members').html(htmlCode);

@@ -17,9 +17,11 @@
     "test": "mocha --exit test/*.test.js"
   },
   "dependencies": {
-    "@google-cloud/datastore": "^6.3.1",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "mysql": "^2.18.1"
+    "express-session": "^1.17.1",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "mocha": "^8.1.3",
